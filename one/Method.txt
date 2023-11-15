@@ -1,0 +1,17 @@
+Make an Elf object that has:
+    int totalCalories
+
+    function addToTotal
+
+    function getTotal
+
+Make list of elves, or array, or whatever the language supports
+Read input line by line
+    if number add to current Elf
+    otherwise, Create new Elf
+    Repeat for all lines
+
+iterate through elf list
+    keep track of most calories
+
+print top calorie
