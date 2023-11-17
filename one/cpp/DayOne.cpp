@@ -20,15 +20,12 @@ class Elf{
 };
 
 int main() {
-    
-    ifstream in("C:\\Users\\theri\\Projects\\2022 Advent of Code\\one\\AOC2022_Day_1_Input.txt");
-
+    ifstream in("C:\\Users\\12315\\VSCode Projects\\2022-Advent-of-Code\\one\\AOC2022_Day_1_Input.txt");
     std::string line;
     Elf firstElf = Elf();
     int topCalorie = 0;
-    while (!in.eof()) {
-        getline(in, line); 
-        std::cout << line << std::endl;
+    while (getline(in, line)) {
+        cout << line << endl;
         if (line.empty()){
             topCalorie = (topCalorie < firstElf.getTotal()) ? firstElf.getTotal() : topCalorie;
             firstElf = Elf();
